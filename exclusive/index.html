@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#7A5410">
+  <title>Villa Serena Exclusive — Arrival Guide</title>
+  <link rel="stylesheet" href="../property.css">
+  <style>
+    .unit-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+    .unit-serena    { background: rgba(181,84,28,0.10); color: #B5541C; }
+    .unit-serenella { background: rgba(123,63,158,0.10); color: #7B3F9E; }
+    .unit-fontanella{ background: rgba(42,122,92,0.10); color: #2A7A5C; }
+    .units-row { display: flex; flex-direction: column; gap: 10px; }
+    .unit-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .unit-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .unit-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .unit-dot.serena     { background: #B5541C; }
+    .unit-dot.serenella  { background: #7B3F9E; }
+    .unit-dot.fontanella { background: #2A7A5C; }
+    .unit-header strong { font-size: 15px; font-weight: 600; flex: 1; }
+    .unit-body { padding: 12px 16px; font-size: 13px; color: var(--text-2); line-height: 1.6; }
+    .unit-body .mini-stats {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .mini-stat {
+      font-size: 12px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .mini-stat b { color: var(--text-2); font-weight: 600; }
+  </style>
+</head>
+<body class="prop-exclusive">
+<div id="app">
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="../" class="back-btn" aria-label="Back to guest info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </a>
+      <div class="header-title">
+        V.S. Exclusive
+        <small>Guest Arrival Guide</small>
+      </div>
+      <a href="tel:+390575612531" class="header-call" aria-label="Call reception">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to · Benvenuti</p>
+      <h1 class="hero-title">Villa Serena<br><em>Exclusive</em></h1>
+      <p class="hero-subtitle">The entire complex — 295 m² · 3 independent villas</p>
+    </div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+
+    <!-- Property stats -->
+    <p class="section-label">The Entire Complex</p>
+    <div class="stats-row">
+      <div class="stat-card"><div class="num">5</div><div class="lbl">Bedrooms</div></div>
+      <div class="stat-card"><div class="num">4+1</div><div class="lbl">Bathrooms</div></div>
+      <div class="stat-card"><div class="num">10+4</div><div class="lbl">Guests</div></div>
+      <div class="stat-card"><div class="num">295</div><div class="lbl">m²</div></div>
+    </div>
+
+    <div class="prop-tag-strip">
+      <span class="prop-tag">♾️ Private infinity pool</span>
+      <span class="prop-tag">🏡 3 independent villas</span>
+      <span class="prop-tag">🌿 Private gardens</span>
+      <span class="prop-tag">🍖 Barbecue</span>
+      <span class="prop-tag">🐾 Pet friendly</span>
+      <span class="prop-tag">📶 Free Wi-Fi</span>
+    </div>
+
+    <!-- The three units -->
+    <p class="section-label">Your Three Villas</p>
+    <div class="units-row">
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-dot serena"></div>
+          <strong>Villa Serena</strong>
+          <span class="unit-badge unit-serena">Main Villa</span>
+        </div>
+        <div class="unit-body">
+          The large white house — the heart of the complex. Rural Tuscan authenticity with all modern comforts and stunning views over the Val di Chiana.
+          <div class="mini-stats">
+            <span class="mini-stat">🛏 <b>3</b> bedrooms</span>
+            <span class="mini-stat">🚿 <b>2+1</b> bathrooms</span>
+            <span class="mini-stat">👥 up to <b>6</b> guests</span>
+            <span class="mini-stat">📐 <b>180</b> m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-dot serenella"></div>
+          <strong>Dépendance Serenella</strong>
+          <span class="unit-badge unit-serenella">Ground Floor</span>
+        </div>
+        <div class="unit-body">
+          Romantic and intimate — entirely on the ground floor with direct garden access and breathtaking sunsets. Perfect for couples or families with young children.
+          <div class="mini-stats">
+            <span class="mini-stat">🛏 <b>1</b> bedroom</span>
+            <span class="mini-stat">🚿 <b>1</b> bathroom</span>
+            <span class="mini-stat">👥 up to <b>2+2</b> guests</span>
+            <span class="mini-stat">📐 <b>65</b> m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-dot fontanella"></div>
+          <strong>Dépendance Fontanella</strong>
+          <span class="unit-badge unit-fontanella">Private Garden</span>
+        </div>
+        <div class="unit-body">
+          Independent and bright — named after the old stone fountain in its fully enclosed private garden. One step entrance, ideal for families with pets.
+          <div class="mini-stats">
+            <span class="mini-stat">🛏 <b>1</b> bedroom</span>
+            <span class="mini-stat">🚿 <b>1</b> bathroom</span>
+            <span class="mini-stat">👥 up to <b>2+2</b> guests</span>
+            <span class="mini-stat">📐 <b>50</b> m²</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+    <p class="section-label">Need Help?</p>
+    <div class="cta-row">
+      <a href="tel:+390575612531" class="cta-btn primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call us
+        <small>Daily 7am–7pm</small>
+      </a>
+      <a href="https://wa.me/390575612531" target="_blank" class="cta-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        WhatsApp
+        <small>Send a message</small>
+      </a>
+    </div>
+
+    <!-- Directions -->
+    <p class="section-label">How to Reach Us</p>
+
+    <a href="https://maps.google.com/?q=43.267296,11.9976595" target="_blank" rel="noopener" class="map-btn">
+      <div class="map-icon">📍</div>
+      <div class="map-text">
+        <strong>Open in Google Maps</strong>
+        <span>43.267296, 11.9976595 — Cortona</span>
+      </div>
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </a>
+
+    <div class="steps" style="margin-top:10px;">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Coming from the top of the hill</strong>
+          <p>The entrance avenue of Villa Serena &amp; Dépendance is on your <b>left</b>, just after <b>Hotel Oasi</b>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Coming from the bottom of the hill</strong>
+          <p>Do <b>not</b> turn immediately at the first entrance — it is on a dangerous curve. Continue uphill ~150m to <b>Hotel Oasi Neumann's small parking</b> on the right. Maneuver there, turn left back down the hill.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>The entrance</strong>
+          <p>After Hotel Oasi's large wall, the <b>villa gate</b> is on your left. Pull into the driveway to collect your keys.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Collection -->
+    <p class="section-label">At the Gate — Key Collection</p>
+    <div class="key-box">
+      <div class="key-box-header">
+        <span class="icon">🗝️</span>
+        <strong>Find all three sets of keys in the wall on the right of the gate</strong>
+      </div>
+      <div class="key-tag-row" style="margin: 16px 18px 0;">
+        <div class="key-tag">
+          <div class="k-label">Take</div>
+          <div class="k-value" style="font-size:16px;">SERENA</div>
+        </div>
+        <div class="key-tag">
+          <div class="k-label">Take</div>
+          <div class="k-value" style="font-size:12px;">SERENELLA</div>
+        </div>
+        <div class="key-tag">
+          <div class="k-label">Take</div>
+          <div class="k-value" style="font-size:11px;">FONTANELLA</div>
+        </div>
+      </div>
+      <div class="key-box-note" style="margin-top:14px;">
+        Inside the hole in the wall to the <b>right of the gate</b> you will find the keys to all three villas and the <b>remote control</b> that opens the gate. Take <b>all three sets</b> of keys: <b>SERENA</b>, <b>SERENELLA</b>, and <b>FONTANELLA</b>. The gate closes automatically.
+      </div>
+    </div>
+
+    <!-- Parking & Location -->
+    <p class="section-label">Parking &amp; Your Villas</p>
+    <div class="info-card">
+      <div class="info-item">
+        <div class="info-icon">🅿️</div>
+        <div class="info-text">
+          <strong>Car Park</strong>
+          <p>After entering through the gate, the car park is on the <b>right side</b> of the private driveway. Multiple spaces for the whole group.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon prop">🏡</div>
+        <div class="info-text">
+          <strong>Villa Serena (Main)</strong>
+          <p>The <b>large white house</b> you see as you enter. Opens with the <b>SERENA</b> keys.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon prop" style="background:rgba(123,63,158,0.09);">🏠</div>
+        <div class="info-text">
+          <strong>Dépendance Serenella</strong>
+          <p>Ground floor apartment, entrance marked with a <b>red arrow</b>. Opens with the <b>SERENELLA</b> keys.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon prop" style="background:rgba(42,122,92,0.09);">🏠</div>
+        <div class="info-text">
+          <strong>Dépendance Fontanella</strong>
+          <p>On the <b>left side</b> of the property, immediately after the main villa. Look for the door with a <b>red arrow</b>. Opens with the <b>FONTANELLA</b> keys.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Check-in Procedure -->
+    <p class="section-label">Check-in Procedure</p>
+    <div class="checkin-steps">
+      <div class="checkin-step">
+        <div class="checkin-num">1</div>
+        <div class="checkin-body">
+          <strong>Confirm arrival via WhatsApp</strong>
+          <p>As soon as your group has arrived and entered the complex, send us a message on WhatsApp confirming possession of all three villas.</p>
+        </div>
+      </div>
+      <div class="checkin-step">
+        <div class="checkin-num">2</div>
+        <div class="checkin-body">
+          <strong>Complete the web check-in</strong>
+          <p>Use the link we sent you by email. Alternatively, send copies of <b>all guests' passports or ID cards</b> via WhatsApp (for all three units).</p>
+        </div>
+      </div>
+      <div class="checkin-step">
+        <div class="checkin-num">3</div>
+        <div class="checkin-body">
+          <strong>Registration within 12 hours</strong>
+          <p>Registration of <b>all guests</b> is mandatory by law within the first 12 hours. This applies to guests in all three villas.</p>
+          <span class="badge badge-red" style="margin-top:6px;">Required by law · within 12 hours · all guests</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important Info -->
+    <p class="section-label">Good to Know</p>
+    <div class="info-card">
+      <div class="info-item">
+        <div class="info-icon green">🕒</div>
+        <div class="info-text">
+          <strong>Check-in time</strong>
+          <p>From <b>3:00 pm</b> to <b>7:00 pm</b>. Early check-in available on request.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🚪</div>
+        <div class="info-text">
+          <strong>Check-out</strong>
+          <p>By <b>10:00 am</b>. Late check-out until 6pm available for a fee.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon green">📶</div>
+        <div class="info-text">
+          <strong>Free Wi-Fi</strong>
+          <p>Available throughout all three villas and the entire property. No password needed.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon prop">♾️</div>
+        <div class="info-text">
+          <strong>Private Infinity Pool</strong>
+          <p>The pool is exclusively yours for the duration of your stay. Enjoy complete privacy with views over the Val di Chiana.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon gold">🍖</div>
+        <div class="info-text">
+          <strong>Barbecue</strong>
+          <p>A barbecue is available for your group. Please ask our staff for instructions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      We are available daily from <b>7am to 7pm</b> for any assistance. For emergencies outside these hours, contact Mr. Francesco: <a href="tel:+393921551115" style="color:var(--prop-accent);font-weight:600;">+39 392 1551115</a>
+    </div>
+
+  </div><!-- /page-content -->
+
+  <footer class="page-footer">
+    Villa Serena &amp; Dependance · Cortona, Tuscany<br>
+    <a href="mailto:info@villaserenacortona.com">info@villaserenacortona.com</a><br>
+    <a href="../">← Back to Guest Info</a>
+  </footer>
+
+</div>
+</body>
+</html>
