@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#FDFAF6">
+  <meta name="description" content="Villa Serena & Dependance – Guest Information Guide, Cortona, Tuscany">
+  <title>Villa Serena Cortona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ════════════════ HEADER ════════════════ -->
+  <header id="header">
+    <div class="header-inner">
+      <!-- House icon -->
+      <div class="header-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <h1 id="page-title">Villa Serena</h1>
+      <a href="tel:+390575612531" class="header-call-btn" aria-label="Call reception">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ════════════════ MAIN ════════════════ -->
+  <main id="main">
+
+    <!-- ── TAB: HOME ──────────────────────────── -->
+    <section class="tab-panel active" id="tab-home" data-title="Villa Serena">
+
+      <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Benvenuti · Welcome</p>
+          <h2 class="hero-title">Villa Serena<br><em>&amp; Dependance</em></h2>
+          <p class="hero-subtitle">Cortona, Tuscany</p>
+        </div>
+      </div>
+
+      <div class="section-body">
+
+        <div class="welcome-card card">
+          <p class="welcome-quote">We happily welcome our guests! Please help us to make your stay as pleasant as possible, we are at your service for all your needs.</p>
+          <p class="welcome-team">— Francesco &amp; Fiorella</p>
+        </div>
+
+        <h3 class="section-label">Quick Actions</h3>
+        <div class="quick-actions">
+          <a href="tel:+390575612531" class="quick-action primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call Reception</span>
+            <small>Daily 7am – 7pm</small>
+          </a>
+          <a href="mailto:info@villaserenacortona.com" class="quick-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Email Us</span>
+            <small>info@villa...</small>
+          </a>
+        </div>
+
+        <h3 class="section-label">Explore</h3>
+        <div class="nav-cards">
+
+          <div class="nav-card" onclick="switchTab('contacts')">
+            <div class="nav-card-icon">📞</div>
+            <div class="nav-card-text">
+              <strong>Helpful Contacts</strong>
+              <span>Emergency &amp; useful numbers</span>
+            </div>
+            <svg class="nav-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+
+          <div class="nav-card" onclick="switchTab('info')">
+            <div class="nav-card-icon">ℹ️</div>
+            <div class="nav-card-text">
+              <strong>Info &amp; Services</strong>
+              <span>Check-in, Wi-Fi, rules &amp; more</span>
+            </div>
+            <svg class="nav-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+
+          <div class="nav-card" onclick="switchTab('restaurants')">
+            <div class="nav-card-icon">🍽️</div>
+            <div class="nav-card-text">
+              <strong>Restaurants</strong>
+              <span>30 restaurants in Cortona</span>
+            </div>
+            <svg class="nav-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+
+          <div class="nav-card" onclick="switchTab('more')">
+            <div class="nav-card-icon">✨</div>
+            <div class="nav-card-text">
+              <strong>More</strong>
+              <span>Laundry, experiences &amp; social</span>
+            </div>
+            <svg class="nav-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+
+        </div>
+
+      </div><!-- /section-body -->
+    </section>
+
+    <!-- ── TAB: INFO & SERVICES ───────────────── -->
+    <section class="tab-panel" id="tab-info" data-title="Info &amp; Services">
+
+      <div class="section-header">
+        <h2>Info &amp; Services</h2>
+        <p>Everything you need for a comfortable stay</p>
+      </div>
+
+      <div class="section-body">
+
+        <h3 class="section-label">Check-in &amp; Check-out</h3>
+        <div class="info-card">
+          <div class="info-item">
+            <div class="info-icon green">🏠</div>
+            <div class="info-text">
+              <strong>Check-in</strong>
+              <p>From <b>3:00 pm</b> to <b>7:00 pm</b></p>
+              <span class="badge badge-green">Early check-in on request</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon red">🚪</div>
+            <div class="info-text">
+              <strong>Check-out</strong>
+              <p>By <b>10:00 am</b></p>
+              <span class="badge badge-gold">Late checkout until 6pm available (fee applies)</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🧾</div>
+            <div class="info-text">
+              <strong>Early Departures</strong>
+              <p>If departing before 7am, please settle your bill by 4pm the day before.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-label">Amenities</h3>
+        <div class="info-card">
+          <div class="info-item">
+            <div class="info-icon green">📶</div>
+            <div class="info-text">
+              <strong>Free Wi-Fi</strong>
+              <p>Available throughout the property — no password required.</p>
+              <span class="badge badge-green">No password needed</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">💧</div>
+            <div class="info-text">
+              <strong>Tap Water</strong>
+              <p>Water comes from a well and is sterilized. Suitable for cooking. We recommend bottled water for drinking.</p>
+              <p class="mt-4">Complimentary water in the fridge. Additional bottles <b>€2.00</b> each.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-label">House Rules</h3>
+        <div class="info-card">
+          <div class="info-item">
+            <div class="info-icon red">🚬</div>
+            <div class="info-text">
+              <strong>No Smoking Indoors</strong>
+              <p>Smoking is strictly prohibited inside. Ashtrays are available in designated outdoor areas.</p>
+              <span class="badge badge-red">Indoor smoking prohibited</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon green">🐾</div>
+            <div class="info-text">
+              <strong>Pets Welcome</strong>
+              <p>Pets are welcome at an additional charge of <b>€10.00 per night</b>.</p>
+              <p class="mt-4">Pets are allowed at the pool on a leash but <b>not in the water</b>.</p>
+              <span class="badge badge-green">Pets welcome · €10/night</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-label">Our Promise</h3>
+        <div class="highlight-box">
+          <p>Our staff is ready to assist you throughout your stay. Our goal is to provide you with an <b>unforgettable experience</b> in the heart of Tuscany. Do not hesitate to ask for anything!</p>
+        </div>
+
+      </div><!-- /section-body -->
+    </section>
+
+    <!-- ── TAB: RESTAURANTS ───────────────────── -->
+    <section class="tab-panel" id="tab-restaurants" data-title="Restaurants">
+
+      <div class="section-header">
+        <h2>Restaurants</h2>
+        <p>Our favourite spots in Cortona</p>
+      </div>
+
+      <div class="search-wrap">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" id="restaurant-search" placeholder="Search restaurants…" autocomplete="off" autocorrect="off" spellcheck="false">
+        </div>
+      </div>
+
+      <p class="restaurant-count" id="restaurant-count">30 restaurants</p>
+
+      <div class="restaurant-list" id="restaurant-list">
+
+        <div class="restaurant-card" data-name="ad braceria">
+          <div class="restaurant-initial">A</div>
+          <div class="restaurant-info">
+            <strong>AD Braceria</strong>
+            <span>+39 0575 638185</span>
+          </div>
+          <a href="tel:+390575638185" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="al tocco">
+          <div class="restaurant-initial">A</div>
+          <div class="restaurant-info">
+            <strong>Al Tocco</strong>
+            <span>+39 333 502 1605</span>
+          </div>
+          <a href="tel:+393335021605" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="ambrosia">
+          <div class="restaurant-initial">A</div>
+          <div class="restaurant-info">
+            <strong>Ambrosia</strong>
+            <span>+39 0575 604715</span>
+          </div>
+          <a href="tel:+390575604715" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="antica trattoria">
+          <div class="restaurant-initial">A</div>
+          <div class="restaurant-info">
+            <strong>Antica Trattoria</strong>
+            <span>+39 0575 631191</span>
+          </div>
+          <a href="tel:+390575631191" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="beerbone art burger">
+          <div class="restaurant-initial">B</div>
+          <div class="restaurant-info">
+            <strong>Beerbone Art Burger</strong>
+            <span>+39 0575 601790</span>
+          </div>
+          <a href="tel:+390575601790" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="birrificio cortonese">
+          <div class="restaurant-initial">B</div>
+          <div class="restaurant-info">
+            <strong>Birrificio Cortonese</strong>
+            <span>+39 0575 613828</span>
+          </div>
+          <a href="tel:+390575613828" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="caffè del teatro caffe del teatro">
+          <div class="restaurant-initial">C</div>
+          <div class="restaurant-info">
+            <strong>Caffè del Teatro</strong>
+            <span>+39 340 922 6458</span>
+          </div>
+          <a href="tel:+393409226458" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="cortona bistrot">
+          <div class="restaurant-initial">C</div>
+          <div class="restaurant-info">
+            <strong>Cortona Bistrot</strong>
+            <span>+39 0575 62957</span>
+          </div>
+          <a href="tel:+39057562957" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="croce del travaglio">
+          <div class="restaurant-initial">C</div>
+          <div class="restaurant-info">
+            <strong>Croce del Travaglio</strong>
+            <span>+39 0575 62832</span>
+          </div>
+          <a href="tel:+39057562832" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="enoteca il caciobrillo">
+          <div class="restaurant-initial">E</div>
+          <div class="restaurant-info">
+            <strong>Enoteca il Caciobrillo</strong>
+            <span>+39 0575 62555</span>
+          </div>
+          <a href="tel:+39057562555" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="enoteca enotria">
+          <div class="restaurant-initial">E</div>
+          <div class="restaurant-info">
+            <strong>Enoteca Enotria</strong>
+            <span>+39 0575 603595</span>
+          </div>
+          <a href="tel:+390575603595" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="fufluns">
+          <div class="restaurant-initial">F</div>
+          <div class="restaurant-info">
+            <strong>Fufluns</strong>
+            <span>+39 0575 604140</span>
+          </div>
+          <a href="tel:+390575604140" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="la bucaccia">
+          <div class="restaurant-initial">L</div>
+          <div class="restaurant-info">
+            <strong>La Bucaccia</strong>
+            <span>+39 0575 606039</span>
+          </div>
+          <a href="tel:+390575606039" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="la fett'unta la fettunta">
+          <div class="restaurant-initial">L</div>
+          <div class="restaurant-info">
+            <strong>La Fett'unta</strong>
+            <span>+39 0575 630582</span>
+          </div>
+          <a href="tel:+390575630582" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="la loggetta">
+          <div class="restaurant-initial">L</div>
+          <div class="restaurant-info">
+            <strong>La Loggetta</strong>
+            <span>+39 0575 630575</span>
+          </div>
+          <a href="tel:+390575630575" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="locanda al pozzo antico dolce maria">
+          <div class="restaurant-initial">L</div>
+          <div class="restaurant-info">
+            <strong>Locanda al Pozzo Antico</strong>
+            <span>+39 0575 62091</span>
+          </div>
+          <a href="tel:+39057562091" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="l'ortino l ortino ortino">
+          <div class="restaurant-initial">L</div>
+          <div class="restaurant-info">
+            <strong>L'Ortino</strong>
+            <span>+39 339 755 7663</span>
+          </div>
+          <a href="tel:+393397557663" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="le rughe di cortona">
+          <div class="restaurant-initial">L</div>
+          <div class="restaurant-info">
+            <strong>Le Rughe di Cortona</strong>
+            <span>+39 0575 604715</span>
+          </div>
+          <a href="tel:+390575604715" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="nessun dorma">
+          <div class="restaurant-initial">N</div>
+          <div class="restaurant-info">
+            <strong>Nessun Dorma</strong>
+            <span>+39 0575 2038</span>
+          </div>
+          <a href="tel:+3905752038" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="osteria del teatro">
+          <div class="restaurant-initial">O</div>
+          <div class="restaurant-info">
+            <strong>Osteria del Teatro</strong>
+            <span>+39 0575 630556</span>
+          </div>
+          <a href="tel:+390575630556" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="preludio">
+          <div class="restaurant-initial">P</div>
+          <div class="restaurant-info">
+            <strong>Preludio</strong>
+            <span>+39 0575 630104</span>
+          </div>
+          <a href="tel:+390575630104" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="quanto basta">
+          <div class="restaurant-initial">Q</div>
+          <div class="restaurant-info">
+            <strong>Quanto Basta</strong>
+            <span>+39 0575 494512</span>
+          </div>
+          <a href="tel:+390575494512" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="sartu sartù">
+          <div class="restaurant-initial">S</div>
+          <div class="restaurant-info">
+            <strong>Sartù</strong>
+            <span>+39 0575 601708</span>
+          </div>
+          <a href="tel:+390575601708" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="scara e beo">
+          <div class="restaurant-initial">S</div>
+          <div class="restaurant-info">
+            <strong>Scara e Beo</strong>
+            <span>+39 0575 958046</span>
+          </div>
+          <a href="tel:+390575958046" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="taverna pane e vino">
+          <div class="restaurant-initial">T</div>
+          <div class="restaurant-info">
+            <strong>Taverna Pane e Vino</strong>
+            <span>+39 0575 631010</span>
+          </div>
+          <a href="tel:+390575631010" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="tempero">
+          <div class="restaurant-initial">T</div>
+          <div class="restaurant-info">
+            <strong>Tempero</strong>
+            <span>+39 0575 606064</span>
+          </div>
+          <a href="tel:+390575606064" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="tonino">
+          <div class="restaurant-initial">T</div>
+          <div class="restaurant-info">
+            <strong>Tonino</strong>
+            <span>+39 0575 630500</span>
+          </div>
+          <a href="tel:+390575630500" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="trattoria dardano">
+          <div class="restaurant-initial">T</div>
+          <div class="restaurant-info">
+            <strong>Trattoria Dardano</strong>
+            <span>+39 0575 601944</span>
+          </div>
+          <a href="tel:+390575601944" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="trattoria etrusca">
+          <div class="restaurant-initial">T</div>
+          <div class="restaurant-info">
+            <strong>Trattoria Etrusca</strong>
+            <span>+39 0575 604088</span>
+          </div>
+          <a href="tel:+390575604088" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div class="restaurant-card" data-name="trattoria toscana">
+          <div class="restaurant-initial">T</div>
+          <div class="restaurant-info">
+            <strong>Trattoria Toscana</strong>
+            <span>+39 0575 604192</span>
+          </div>
+          <a href="tel:+390575604192" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <div id="no-results" class="no-results" style="display:none;">
+          No restaurants found
+        </div>
+
+      </div><!-- /restaurant-list -->
+    </section>
+
+    <!-- ── TAB: CONTACTS ──────────────────────── -->
+    <section class="tab-panel" id="tab-contacts" data-title="Helpful Contacts">
+
+      <div class="section-header">
+        <h2>Helpful Contacts</h2>
+        <p>All the numbers you might need</p>
+      </div>
+
+      <div class="section-body">
+
+        <h3 class="section-label">Villa Serena</h3>
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon primary">🏡</div>
+            <div class="contact-text">
+              <strong>Reception</strong>
+              <small>Daily 7:00 am – 7:00 pm</small>
+            </div>
+            <a href="tel:+390575612531" class="call-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+        </div>
+
+        <h3 class="section-label">Owners — Emergencies Only</h3>
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon gold">👨‍💼</div>
+            <div class="contact-text">
+              <strong>Mr. Francesco</strong>
+              <small>Outside reception hours</small>
+            </div>
+            <a href="tel:+393921551115" class="call-btn secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon gold">👩‍💼</div>
+            <div class="contact-text">
+              <strong>Mrs. Fiorella</strong>
+              <small>Outside reception hours</small>
+            </div>
+            <a href="tel:+393477943481" class="call-btn secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+        </div>
+
+        <h3 class="section-label">Emergency Services</h3>
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon red">🚨</div>
+            <div class="contact-text">
+              <strong>Emergency Number</strong>
+              <small>Police, fire, ambulance</small>
+            </div>
+            <a href="tel:112" class="call-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              112
+            </a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon red">🏥</div>
+            <div class="contact-text">
+              <strong>Overnight Doctor</strong>
+              <small>Medical assistance after hours</small>
+            </div>
+            <a href="tel:116117" class="call-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              116117
+            </a>
+          </div>
+        </div>
+
+        <h3 class="section-label">Local Services</h3>
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon green">🚕</div>
+            <div class="contact-text">
+              <strong>Taxi Cortona</strong>
+              <small>Local taxi service</small>
+            </div>
+            <a href="tel:+393474839472" class="call-btn secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">ℹ️</div>
+            <div class="contact-text">
+              <strong>Cortona Info Point</strong>
+              <small>Piazza Signorelli, 9</small>
+            </div>
+            <a href="tel:+390575637274" class="call-btn secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+        </div>
+
+        <h3 class="section-label">Train Information</h3>
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon">🚂</div>
+            <div class="contact-text">
+              <strong>Trenitalia (Italian)</strong>
+              <small>Train timetables &amp; bookings</small>
+            </div>
+            <a href="tel:+390630000" class="call-btn secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🚂</div>
+            <div class="contact-text">
+              <strong>Trenitalia (English)</strong>
+              <small>Train info in English</small>
+            </div>
+            <a href="tel:+3905210550" class="call-btn secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /section-body -->
+    </section>
+
+    <!-- ── TAB: MORE ───────────────────────────── -->
+    <section class="tab-panel" id="tab-more" data-title="More">
+
+      <div class="section-header">
+        <h2>More</h2>
+        <p>Laundry, experiences &amp; social</p>
+      </div>
+
+      <div class="section-body">
+
+        <!-- Laundry -->
+        <div class="more-section-title"><span>🧺</span> Laundry</div>
+        <div class="more-card">
+          <div class="price-tag">€5 per wash · detergent included</div>
+          <div class="detail-row">
+            <div class="dot"></div>
+            <p>Self-service laundry available <b>24 hours a day</b>.</p>
+          </div>
+          <div class="detail-row">
+            <div class="dot"></div>
+            <p>Located on the right side of Villa Serena — open the <b>grey door</b>.</p>
+          </div>
+          <div class="detail-row">
+            <div class="dot"></div>
+            <p>Please inform staff of the number of washes used before checkout. Charges will be added to your final bill.</p>
+          </div>
+          <div class="highlight-box mt-12">
+            <p><b>External option:</b> Lavanderia Cortonese — Via Dardano, n. 35<br>
+            Professional dry cleaning: <a href="tel:+390575630364" style="color:var(--primary);font-weight:600;">+39 0575 630364</a></p>
+          </div>
+        </div>
+
+        <!-- Garbage -->
+        <div class="more-section-title mt-16"><span>♻️</span> Waste &amp; Recycling</div>
+        <div class="more-card">
+          <div class="detail-row">
+            <div class="dot"></div>
+            <p>Please follow the waste disposal instructions provided in your room and at the reception desk.</p>
+          </div>
+          <div class="detail-row">
+            <div class="dot"></div>
+            <p>Separate your waste into the correct bins: <b>plastic, glass, paper and organic</b>.</p>
+          </div>
+          <div class="detail-row">
+            <div class="dot"></div>
+            <p>Bins are located in the designated area — our staff can show you the way.</p>
+          </div>
+        </div>
+
+        <!-- Experiences -->
+        <div class="more-section-title mt-16"><span>🌿</span> Experiences &amp; Activities</div>
+        <div class="more-card">
+          <p>Discover the best of Tuscany with our partner.</p>
+          <div class="discount-badge">Exclusive Guest Discount</div>
+          <p class="mt-8">As a guest of Villa Serena, you enjoy a special discount with <b>EBK Luxury Experience</b> — curated tours, tastings, and unforgettable Tuscan adventures.</p>
+          <div class="highlight-box mt-12">
+            <p style="margin-bottom:6px;">Use this code when booking:</p>
+            <div class="code-box">VSD2025</div>
+            <p class="mt-4 text-muted">Visit <b>ebkexperience.com</b> to explore available experiences</p>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="more-section-title mt-16"><span>📱</span> Social &amp; Reviews</div>
+        <div class="more-card">
+          <p>Share your experience and follow us! Your reviews mean the world to us.</p>
+          <div class="social-grid mt-12">
+            <a href="https://www.instagram.com/villaserenacortona" target="_blank" rel="noopener" class="social-btn instagram">
+              <div class="social-icon">📷</div>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/villaserenacortona" target="_blank" rel="noopener" class="social-btn facebook">
+              <div class="social-icon">👍</div>
+              Facebook
+            </a>
+          </div>
+          <a href="https://maps.google.com/?q=43.267296,11.9976595" target="_blank" rel="noopener" class="social-btn google mt-8" style="width:100%;display:flex;flex-direction:row;gap:12px;padding:14px 16px;justify-content:center;">
+            <div class="social-icon" style="font-size:20px;">⭐</div>
+            Leave a Google Review
+          </a>
+        </div>
+
+      </div><!-- /section-body -->
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ════════════════ BOTTOM NAV ════════════════ -->
+  <nav id="bottom-nav">
+
+    <button class="nav-btn active" data-tab="home" onclick="switchTab('home')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span>Home</span>
+    </button>
+
+    <button class="nav-btn" data-tab="contacts" onclick="switchTab('contacts')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span>Contacts</span>
+    </button>
+
+    <button class="nav-btn" data-tab="info" onclick="switchTab('info')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="8" x2="12" y2="12"/>
+        <line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <span>Info</span>
+    </button>
+
+    <button class="nav-btn" data-tab="restaurants" onclick="switchTab('restaurants')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+        <line x1="6" y1="1" x2="6" y2="4"/>
+        <line x1="10" y1="1" x2="10" y2="4"/>
+        <line x1="14" y1="1" x2="14" y2="4"/>
+      </svg>
+      <span>Restaurants</span>
+    </button>
+
+    <button class="nav-btn" data-tab="more" onclick="switchTab('more')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="5" r="1" fill="currentColor"/>
+        <circle cx="12" cy="12" r="1" fill="currentColor"/>
+        <circle cx="12" cy="19" r="1" fill="currentColor"/>
+      </svg>
+      <span>More</span>
+    </button>
+
+  </nav>
+
+</div><!-- /app -->
+
+<script src="app.js"></script>
+</body>
+</html>
