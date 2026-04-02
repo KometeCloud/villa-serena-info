@@ -579,6 +579,53 @@ img { max-width: 100%; display: block; }
 .key-tag .k-label { font-size: 10px; color: var(--text-3); letter-spacing: 0.1em; text-transform: uppercase; }
 .key-tag .k-value { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--prop-accent); }
 
+/* ── Step Images ─────────────────────────────────────────── */
+.step-img {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.step-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info-img {
+  margin-top: 8px;
+  width: 100%;
+  border-radius: var(--r-xs);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.info-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.key-img {
+  margin: 0 18px 16px;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.key-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 .page-footer {
   padding: 20px 16px calc(var(--safe-bottom) + 16px);
