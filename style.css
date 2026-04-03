@@ -129,6 +129,23 @@ img { max-width: 100%; display: block; }
 .header-call-btn:active { background: var(--primary); color: #fff; }
 .header-call-btn svg { width: 18px; height: 18px; }
 
+/* Language toggle */
+.lang-btn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  padding: 5px 10px;
+  border-radius: 100px;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+  flex-shrink: 0;
+  transition: background 0.18s, color 0.18s;
+  line-height: 1;
+}
+.lang-btn:active { background: var(--primary); color: #fff; }
+.header-call-btn svg { width: 18px; height: 18px; }
+
 /* ── Main / Tab Panels ───────────────────────────────────── */
 #main {
   flex: 1;

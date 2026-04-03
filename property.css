@@ -161,6 +161,23 @@ img { max-width: 100%; display: block; }
 .header-call:active { background: var(--prop-accent); color: #fff; }
 .header-call svg { width: 18px; height: 18px; }
 
+/* Language toggle */
+.lang-btn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  padding: 5px 10px;
+  border-radius: 100px;
+  border: 1.5px solid var(--prop-accent);
+  color: var(--prop-accent);
+  background: transparent;
+  flex-shrink: 0;
+  transition: background 0.18s, color 0.18s;
+  line-height: 1;
+  cursor: pointer;
+}
+.lang-btn:active { background: var(--prop-accent); color: #fff; }
+
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
   position: relative;

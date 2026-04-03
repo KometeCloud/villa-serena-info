@@ -52,11 +52,11 @@ function filterRestaurants(query) {
     if (match) visible++;
   });
 
-  // Update count
+  // Update count (i18n)
   if (q === '') {
-    countEl.textContent = `${TOTAL} restaurants`;
+    countEl.textContent = (window.t ? t('rest_count') : '{n} restaurants').replace('{n}', TOTAL);
   } else {
-    countEl.textContent = `${visible} of ${TOTAL} restaurants`;
+    countEl.textContent = (window.t ? t('rest_count_f') : '{v} of {n} restaurants').replace('{v}', visible).replace('{n}', TOTAL);
   }
 
   // No results message
@@ -90,5 +90,5 @@ document.addEventListener('touchmove', e => {
 
 // ── Init ──────────────────────────────────────────────────
 
-// Set initial count
+// Set initial count (updated again by i18n DOMContentLoaded, but set default here)
 if (countEl) countEl.textContent = `${TOTAL} restaurants`;

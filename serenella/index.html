@@ -12,7 +12,6 @@
 <body class="prop-serenella">
 <div id="app">
 
-  <!-- HEADER -->
   <header id="header">
     <div class="header-inner">
       <a href="../" class="back-btn" aria-label="Back to guest info">
@@ -20,67 +19,63 @@
       </a>
       <div class="header-title">
         Dép. Serenella
-        <small>Guest Arrival Guide</small>
+        <small data-i18n="guide_small">Guest Arrival Guide</small>
       </div>
       <a href="tel:+390575612531" class="header-call" aria-label="Call reception">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </a>
+      <button class="lang-btn" id="lang-toggle" onclick="toggleLang()">IT</button>
     </div>
   </header>
 
-  <!-- HERO -->
   <div class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Welcome to · Benvenuti</p>
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Welcome to · Benvenuti</p>
       <h1 class="hero-title">Dépendance<br><em>Serenella</em></h1>
       <p class="hero-subtitle">Cortona, Tuscany · 65 m²</p>
     </div>
   </div>
 
-  <!-- PAGE CONTENT -->
   <div class="page-content">
 
-    <!-- Property stats -->
-    <p class="section-label">Your Property</p>
+    <p class="section-label" data-i18n="s_your_property">Your Property</p>
     <div class="stats-row">
-      <div class="stat-card"><div class="num">1</div><div class="lbl">Bedroom</div></div>
-      <div class="stat-card"><div class="num">1</div><div class="lbl">Bathroom</div></div>
-      <div class="stat-card"><div class="num">2+2</div><div class="lbl">Guests</div></div>
+      <div class="stat-card"><div class="num">1</div><div class="lbl" data-i18n="stat_bedroom">Bedroom</div></div>
+      <div class="stat-card"><div class="num">1</div><div class="lbl" data-i18n="stat_bathroom">Bathroom</div></div>
+      <div class="stat-card"><div class="num">2+2</div><div class="lbl" data-i18n="stat_guests">Guests</div></div>
       <div class="stat-card"><div class="num">65</div><div class="lbl">m²</div></div>
     </div>
 
     <div class="prop-tag-strip">
-      <span class="prop-tag">🌅 Stunning sunsets</span>
-      <span class="prop-tag">🏊 Pool access</span>
-      <span class="prop-tag">🚶 Ground floor</span>
-      <span class="prop-tag">🐾 Pet friendly</span>
-      <span class="prop-tag">❄️ Air conditioning</span>
-      <span class="prop-tag">📶 Free Wi-Fi</span>
+      <span class="prop-tag" data-i18n="tag_sunsets">🌅 Stunning sunsets</span>
+      <span class="prop-tag" data-i18n="tag_pool_access">🏊 Pool access</span>
+      <span class="prop-tag" data-i18n="tag_ground_floor">🚶 Ground floor</span>
+      <span class="prop-tag" data-i18n="tag_pet_friendly">🐾 Pet friendly</span>
+      <span class="prop-tag" data-i18n="tag_ac">❄️ Air conditioning</span>
+      <span class="prop-tag" data-i18n="tag_wifi">📶 Free Wi-Fi</span>
     </div>
 
-    <!-- Quick Actions -->
-    <p class="section-label">Need Help?</p>
+    <p class="section-label" data-i18n="s_need_help">Need Help?</p>
     <div class="cta-row">
       <a href="tel:+390575612531" class="cta-btn primary">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Call us
-        <small>Daily 7am–7pm</small>
+        <span data-i18n="call_us">Call us</span>
+        <small data-i18n="call_us_small">Daily 7am–7pm</small>
       </a>
       <a href="https://wa.me/390575612531" target="_blank" class="cta-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        WhatsApp
-        <small>Send a message</small>
+        <span data-i18n="whatsapp">WhatsApp</span>
+        <small data-i18n="whatsapp_small">Send a message</small>
       </a>
     </div>
 
-    <!-- Directions -->
-    <p class="section-label">How to Reach Us</p>
+    <p class="section-label" data-i18n="s_how_to_reach">How to Reach Us</p>
 
     <a href="https://maps.google.com/?q=43.267296,11.9976595" target="_blank" rel="noopener" class="map-btn">
       <div class="map-icon">📍</div>
       <div class="map-text">
-        <strong>Open in Google Maps</strong>
+        <strong data-i18n="map_strong">Open in Google Maps</strong>
         <span>43.267296, 11.9976595 — Cortona</span>
       </div>
       <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
@@ -90,153 +85,148 @@
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-body">
-          <strong>Coming from the top of the hill</strong>
-          <p>The entrance avenue of Villa Serena &amp; Dépendance is on your <b>left</b>, just after <b>Hotel Oasi</b>.</p>
+          <strong data-i18n="step1_title">Coming from the top of the hill</strong>
+          <p data-i18n-html="step1_p">The entrance avenue of Villa Serena &amp; Dépendance is on your <b>left</b>, just after <b>Hotel Oasi</b>.</p>
           <div class="step-img"><img src="../IMMAGINI/step1-gira-sinistra.jpg" alt="Turn left to find the gate" loading="lazy"></div>
         </div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-body">
-          <strong>Coming from the bottom of the hill</strong>
-          <p>Do <b>not</b> turn immediately at the first entrance — it is on a dangerous curve. Continue uphill ~150m to <b>Hotel Oasi Neumann's small parking</b> on the right. Maneuver there, turn left back down the hill.</p>
+          <strong data-i18n="step2_title">Coming from the bottom of the hill</strong>
+          <p data-i18n-html="step2_p">Do <b>not</b> turn immediately at the first entrance — it is on a dangerous curve. Continue uphill ~150m to <b>Hotel Oasi Neumann's small parking</b> on the right. Maneuver there, turn left back down the hill.</p>
           <div class="step-img"><img src="../IMMAGINI/step2-oasi-parking.png" alt="Hotel Oasi parking to maneuver" loading="lazy"></div>
         </div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-body">
-          <strong>The entrance</strong>
-          <p>After Hotel Oasi's large wall, the <b>villa gate</b> is on your left. Pull into the driveway to collect your keys.</p>
+          <strong data-i18n="step3_title">The entrance</strong>
+          <p data-i18n-html="step3_p">After Hotel Oasi's large wall, the <b>villa gate</b> is on your left. Pull into the driveway to collect your keys.</p>
           <div class="step-img"><img src="../IMMAGINI/step3-cancello.png" alt="Villa Serena entrance gate" loading="lazy"></div>
         </div>
       </div>
     </div>
 
-    <!-- Key Collection -->
-    <p class="section-label">At the Gate — Key Collection</p>
+    <p class="section-label" data-i18n="s_key_collection">At the Gate — Key Collection</p>
     <div class="key-box">
       <div class="key-box-header">
         <span class="icon">🗝️</span>
-        <strong>Find your keys in the wall on the right of the gate</strong>
+        <strong data-i18n="key_find">Find your keys in the wall on the right of the gate</strong>
       </div>
       <div class="key-name-badge">
-        <div class="key-label">Take only the keys labelled</div>
+        <div class="key-label" data-i18n="key_label">Take only the keys labelled</div>
         <div class="key-value">SERENELLA</div>
       </div>
       <div class="key-img"><img src="../IMMAGINI/step4-chiavi.jpg" alt="Where to find the keys" loading="lazy"></div>
-      <div class="key-box-note">
-        Inside the hole in the wall to the <b>right of the gate</b> you will find the keys to your apartment and the <b>remote control</b> that opens the gate automatically. Take <b>only</b> the keys marked <b>SERENELLA</b>. The gate closes automatically behind you.
-      </div>
+      <div class="key-box-note" data-i18n-html="key_note_serenella">Inside the hole in the wall to the <b>right of the gate</b> you will find the keys to your apartment and the <b>remote control</b> that opens the gate automatically. Take <b>only</b> the keys marked <b>SERENELLA</b>. The gate closes automatically behind you.</div>
     </div>
 
-    <!-- Parking & Apartment -->
-    <p class="section-label">Parking &amp; Your Apartment</p>
+    <p class="section-label" data-i18n="sella_s_parking">Parking &amp; Your Apartment</p>
     <div class="info-card">
       <div class="info-item">
         <div class="info-icon">🅿️</div>
         <div class="info-text">
-          <strong>Car Park</strong>
-          <p>After entering through the gate, the car park is on the <b>right side</b> of the private driveway.</p>
+          <strong data-i18n="car_park">Car Park</strong>
+          <p data-i18n-html="car_park_p">After entering through the gate, the car park is on the <b>right side</b> of the private driveway.</p>
           <div class="info-img"><img src="../IMMAGINI/PACHEGGIO.jpg" alt="Car park" loading="lazy"></div>
         </div>
       </div>
       <div class="info-item">
         <div class="info-icon prop">🏠</div>
         <div class="info-text">
-          <strong>Your Apartment</strong>
-          <p>Dépendance Serenella is a <b>ground-floor apartment</b> within the Villa Serena complex. The main entrance is marked with a <b>red arrow</b> on the property map. Entirely on one level — no stairs.</p>
+          <strong data-i18n="sella_apt_title">Your Apartment</strong>
+          <p data-i18n-html="sella_apt_p">Dépendance Serenella is a <b>ground-floor apartment</b> within the Villa Serena complex. The main entrance is marked with a <b>red arrow</b> on the property map. Entirely on one level — no stairs.</p>
           <div class="info-img"><img src="../IMMAGINI/SERENELLA-ENTRATA.jpg" alt="Dépendance Serenella entrance" loading="lazy"></div>
         </div>
       </div>
       <div class="info-item">
         <div class="info-icon green">🌅</div>
         <div class="info-text">
-          <strong>Direct Garden Access</strong>
-          <p>Your apartment has direct access to the garden. Enjoy the <b>breathtaking sunsets</b> from your private outdoor space.</p>
+          <strong data-i18n="sella_garden_title">Direct Garden Access</strong>
+          <p data-i18n-html="sella_garden_p">Your apartment has direct access to the garden. Enjoy the <b>breathtaking sunsets</b> from your private outdoor space.</p>
         </div>
       </div>
       <div class="info-item">
         <div class="info-icon">🚪</div>
         <div class="info-text">
-          <strong>Interior Doors</strong>
-          <p>Additional keys for interior doors are attached directly to those doors inside the apartment.</p>
+          <strong data-i18n="int_doors">Interior Doors</strong>
+          <p data-i18n="int_doors_p">Additional keys for interior doors are attached directly to those doors inside the apartment.</p>
         </div>
       </div>
     </div>
 
-    <!-- Check-in Procedure -->
-    <p class="section-label">Check-in Procedure</p>
+    <p class="section-label" data-i18n="s_checkin_proc">Check-in Procedure</p>
     <div class="checkin-steps">
       <div class="checkin-step">
         <div class="checkin-num">1</div>
         <div class="checkin-body">
-          <strong>Confirm arrival via WhatsApp</strong>
-          <p>As soon as you enter the apartment, send us a message on WhatsApp confirming you have arrived and taken possession of Dépendance Serenella.</p>
+          <strong data-i18n="ci1_title">Confirm arrival via WhatsApp</strong>
+          <p data-i18n="ci1_p_sella">As soon as you enter the apartment, send us a message on WhatsApp confirming you have arrived and taken possession of Dépendance Serenella.</p>
         </div>
       </div>
       <div class="checkin-step">
         <div class="checkin-num">2</div>
         <div class="checkin-body">
-          <strong>Complete the web check-in</strong>
-          <p>Use the link we sent you by email to complete the online check-in form. Alternatively, send copies of all guests' <b>passports or ID cards</b> via WhatsApp.</p>
+          <strong data-i18n="ci2_title">Complete the web check-in</strong>
+          <p data-i18n-html="ci2_p">Use the link we sent you by email to complete the online check-in form. Alternatively, send copies of all guests' <b>passports or ID cards</b> via WhatsApp.</p>
         </div>
       </div>
       <div class="checkin-step">
         <div class="checkin-num">3</div>
         <div class="checkin-body">
-          <strong>Registration within 12 hours</strong>
-          <p>Registration is <b>mandatory by law</b> and must be completed <b>within the first 12 hours</b> after check-in. Thank you!</p>
-          <span class="badge badge-red" style="margin-top:6px;">Required by law · within 12 hours</span>
+          <strong data-i18n="ci3_title">Registration within 12 hours</strong>
+          <p data-i18n-html="ci3_p">Registration is <b>mandatory by law</b> and must be completed <b>within the first 12 hours</b> after check-in. Thank you!</p>
+          <span class="badge badge-red" style="margin-top:6px;" data-i18n="ci3_badge">Required by law · within 12 hours</span>
         </div>
       </div>
     </div>
 
-    <!-- Important Info -->
-    <p class="section-label">Good to Know</p>
+    <p class="section-label" data-i18n="s_good_to_know">Good to Know</p>
     <div class="info-card">
       <div class="info-item">
         <div class="info-icon green">🕒</div>
         <div class="info-text">
-          <strong>Check-in time</strong>
-          <p>From <b>3:00 pm</b> to <b>7:00 pm</b>. Early check-in available on request.</p>
+          <strong data-i18n="gk_ci_title">Check-in time</strong>
+          <p data-i18n-html="gk_ci_p">From <b>3:00 pm</b> to <b>7:00 pm</b>. Early check-in available on request.</p>
         </div>
       </div>
       <div class="info-item">
         <div class="info-icon">🚪</div>
         <div class="info-text">
-          <strong>Check-out</strong>
-          <p>By <b>10:00 am</b>. Late check-out until 6pm available for a fee.</p>
+          <strong data-i18n="gk_co_title">Check-out</strong>
+          <p data-i18n-html="gk_co_p">By <b>10:00 am</b>. Late check-out until 6pm available for a fee.</p>
         </div>
       </div>
       <div class="info-item">
         <div class="info-icon green">📶</div>
         <div class="info-text">
-          <strong>Free Wi-Fi</strong>
-          <p>Available throughout the property — <b>no password required</b>.</p>
+          <strong data-i18n="gk_wifi_title">Free Wi-Fi</strong>
+          <p data-i18n-html="gk_wifi_p">Available throughout the property — <b>no password required</b>.</p>
         </div>
       </div>
       <div class="info-item">
         <div class="info-icon prop">🏊</div>
         <div class="info-text">
-          <strong>Pool Access</strong>
-          <p>You have full access to the shared infinity pool. Enjoy the views over the Val di Chiana!</p>
+          <strong data-i18n="gk_pool_title">Pool Access</strong>
+          <p data-i18n-html="gk_pool_p_sella">You have full access to the shared infinity pool. Enjoy the views over the Val di Chiana!</p>
         </div>
       </div>
     </div>
 
-    <div class="highlight-box">
+    <div class="highlight-box" data-i18n-html="highlight_emerg">
       We are available daily from <b>7am to 7pm</b> for any assistance. For emergencies outside these hours, contact Mr. Francesco: <a href="tel:+393921551115" style="color:var(--prop-accent);font-weight:600;">+39 392 1551115</a>
     </div>
 
-  </div><!-- /page-content -->
+  </div>
 
   <footer class="page-footer">
     Villa Serena &amp; Dependance · Cortona, Tuscany<br>
     <a href="mailto:info@villaserenacortona.com">info@villaserenacortona.com</a><br>
-    <a href="../">← Back to Guest Info</a>
+    <a href="../" data-i18n="footer_back">← Back to Guest Info</a>
   </footer>
 
 </div>
+<script src="../i18n.js"></script>
 </body>
 </html>
