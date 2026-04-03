@@ -916,7 +916,7 @@ img { max-width: 100%; display: block; }
 .tab-panel { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* ── Desktop guard ────────────────────────────────────────── */
-@media (min-width: 431px) {
+@media (min-width: 600px) {
   body {
     background: #EDE8E3;
     display: flex;
@@ -928,6 +928,7 @@ img { max-width: 100%; display: block; }
 
   #app {
     width: 430px;
+    max-width: 430px;
     border-radius: 40px;
     box-shadow:
       0 32px 80px rgba(28,16,9,0.22),
