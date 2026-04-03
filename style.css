@@ -937,7 +937,7 @@ img { max-width: 100%; display: block; }
 }
 
 .owners-warning-text {
-  font-size: 9px;
+  font-size: 7px;
   color: var(--red);
   opacity: 0.85;
   line-height: 1.5;
