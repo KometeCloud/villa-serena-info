@@ -931,6 +931,50 @@ img { max-width: 100%; display: block; }
 .tab-panel::-webkit-scrollbar { display: none; }
 .tab-panel { -ms-overflow-style: none; scrollbar-width: none; }
 
+/* ── Emergency Warning ───────────────────────────────────── */
+.emergency-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--red-lt);
+  border: 1.5px solid var(--red);
+  border-radius: var(--r-sm);
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.emergency-warning strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.emergency-warning p {
+  font-size: 12px;
+  color: var(--red);
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.emergency-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--red);
+  flex-shrink: 0;
+  margin-top: 3px;
+  animation: blink 1.2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.15; }
+}
+
 /* ── Extra Services ──────────────────────────────────────── */
 .extras-intro-box {
   display: flex;
