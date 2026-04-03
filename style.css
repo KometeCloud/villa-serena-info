@@ -945,7 +945,7 @@ img { max-width: 100%; display: block; }
 
 .emergency-warning strong {
   display: block;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: 700;
   color: var(--red);
   text-transform: uppercase;
@@ -954,7 +954,7 @@ img { max-width: 100%; display: block; }
 }
 
 .emergency-warning p {
-  font-size: 12px;
+  font-size: 8px;
   color: var(--red);
   line-height: 1.5;
   opacity: 0.85;
