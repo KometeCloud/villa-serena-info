@@ -939,9 +939,10 @@ img { max-width: 100%; display: block; }
 .owners-warning-text {
   font-size: 9px;
   color: var(--red);
-  opacity: 0.8;
+  opacity: 0.85;
   line-height: 1.5;
-  margin: -6px 0 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
 }
 
 .emergency-dot {
