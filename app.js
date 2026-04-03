@@ -103,5 +103,9 @@ document.addEventListener('touchmove', e => {
 
 // ── Init ──────────────────────────────────────────────────
 
+// Switch to tab from URL param (e.g. ?tab=contacts when coming from property pages)
+const urlTab = new URLSearchParams(window.location.search).get('tab');
+if (urlTab) switchTab(urlTab);
+
 // Set initial count (updated again by i18n DOMContentLoaded, but set default here)
 if (countEl) countEl.textContent = `${TOTAL} restaurants`;
