@@ -932,30 +932,16 @@ img { max-width: 100%; display: block; }
 .tab-panel { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* ── Emergency Warning ───────────────────────────────────── */
-.emergency-warning {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  background: var(--red-lt);
-  border-bottom: 1px solid rgba(192,57,43,0.2);
-  padding: 10px 14px;
+.section-label-emerg {
+  color: var(--red);
 }
 
-.emergency-warning strong {
-  display: block;
+.owners-warning-text {
   font-size: 9px;
-  font-weight: 700;
   color: var(--red);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
-}
-
-.emergency-warning p {
-  font-size: 8px;
-  color: var(--red);
+  opacity: 0.8;
   line-height: 1.5;
-  opacity: 0.85;
+  margin: -6px 0 10px;
 }
 
 .emergency-dot {
