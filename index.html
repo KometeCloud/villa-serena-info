@@ -95,6 +95,15 @@
             <svg class="nav-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
 
+          <div class="nav-card" onclick="switchTab('extras')">
+            <div class="nav-card-icon">✨</div>
+            <div class="nav-card-text">
+              <strong data-i18n="home_card_extras_t">Extra Services</strong>
+              <span data-i18n="home_card_extras_s">Experiences, tastings &amp; wellness</span>
+            </div>
+            <svg class="nav-card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+
           <div class="nav-card" onclick="switchTab('restaurants')">
             <div class="nav-card-icon">🍽️</div>
             <div class="nav-card-text">
@@ -199,6 +208,164 @@
         <h3 class="section-label" data-i18n="s_promise">Our Promise</h3>
         <div class="highlight-box">
           <p data-i18n-html="info_promise_p">Our staff is ready to assist you throughout your stay. Our goal is to provide you with an <b>unforgettable experience</b> in the heart of Tuscany. Do not hesitate to ask for anything!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── TAB: EXTRA SERVICES ─────────────────── -->
+    <section class="tab-panel" id="tab-extras" data-title="Extra Services" data-i18n-title="title_extras">
+
+      <div class="section-header">
+        <h2 data-i18n="extras_h2">Extra Services</h2>
+        <p data-i18n="extras_sub">Enhance your stay with exclusive experiences</p>
+      </div>
+
+      <div class="section-body">
+
+        <div class="extras-intro-box">
+          <img src="IMMAGINI/ADDEXTRA.png" class="extras-logo" alt="AddExtra">
+          <p data-i18n="extras_intro">Book curated experiences directly from your phone, provided by our trusted partner AddExtra.</p>
+        </div>
+
+        <h3 class="section-label" data-i18n="extras_s_wines">🍷 Wines &amp; Tastings</h3>
+        <div class="extra-cards">
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🍷</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex1_title">Wine Tasting in the stunning Tuscan landscapes</strong>
+              <p data-i18n="ex1_desc">Discover the soul of Tuscany through its wines. A guided tasting experience set among breathtaking vineyards and rolling hills.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🍾</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex2_title">Wine Box Taste Of Cortona</strong>
+              <p data-i18n="ex2_desc">A curated selection of the finest local Cortona wines delivered to your villa. The perfect introduction to the wines of this ancient hilltop town.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="section-label" data-i18n="extras_s_tours">🗺️ Tours &amp; Excursions</h3>
+        <div class="extra-cards">
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🏞️</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex3_title">The Heart of Chiana Valley</strong>
+              <p data-i18n="ex3_desc">An immersive journey through the Chiana Valley — its hidden villages, golden landscapes and authentic Tuscan life away from the tourist trail.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🌄</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex6_title">Elegance of Val d'Orcia</strong>
+              <p data-i18n="ex6_desc">A full-day tour through the iconic Val d'Orcia — a UNESCO World Heritage landscape of cypress-lined roads, medieval villages and thermal baths.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🏰</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex8_title">Best of Monteriggioni Area</strong>
+              <p data-i18n="ex8_desc">Explore the perfectly preserved medieval village of Monteriggioni and its surrounding Chianti wine country — history, culture and stunning landscapes.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="section-label" data-i18n="extras_s_wellness">💆 Wellness</h3>
+        <div class="extra-cards">
+
+          <div class="extra-card">
+            <div class="extra-card-icon">💆</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex4_title">Massages in accommodation</strong>
+              <p data-i18n="ex4_desc">Relax in the comfort of your villa or apartment. Our professional therapists come to you, so you never need to leave your retreat.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🧘</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex5_title">Holistic and sports massages</strong>
+              <p data-i18n="ex5_desc">Tailored holistic or sports massage treatments to rejuvenate body and mind. Ideal for active travellers and those seeking deep relaxation.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="section-label" data-i18n="extras_s_cooking">👨‍🍳 Cooking &amp; Food</h3>
+        <div class="extra-cards">
+
+          <div class="extra-card">
+            <div class="extra-card-icon">👨‍🍳</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex7_title">Cooking &amp; Wine among the hills</strong>
+              <p data-i18n="ex7_desc">Learn to prepare authentic Tuscan dishes in a farmhouse kitchen, then enjoy your creations paired with local wines among the hills.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🫒</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex9_title">Olive oil tour &amp; Oil tasting</strong>
+              <p data-i18n="ex9_desc">Visit an authentic Tuscan olive grove and mill. Learn the production process and taste some of Italy's finest extra-virgin olive oils.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-icon">🏠</div>
+            <div class="extra-card-body">
+              <strong data-i18n="ex10_title">Cooking &amp; Roots in Italian Home</strong>
+              <p data-i18n="ex10_desc">An intimate cooking class in a real Italian home, exploring traditional Tuscan family recipes passed down through generations.</p>
+              <a href="https://addextra.services" target="_blank" class="extra-book-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span data-i18n="extras_book">Book Now</span>
+              </a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -627,6 +794,11 @@
         <line x1="12" y1="16" x2="12.01" y2="16"/>
       </svg>
       <span data-i18n="nav_info">Info</span>
+    </button>
+
+    <button class="nav-btn" data-tab="extras" onclick="switchTab('extras')">
+      <img src="IMMAGINI/ADDEXTRA.png" class="nav-icon-img" alt="Extra">
+      <span data-i18n="nav_extras">Extras</span>
     </button>
 
     <button class="nav-btn" data-tab="restaurants" onclick="switchTab('restaurants')">

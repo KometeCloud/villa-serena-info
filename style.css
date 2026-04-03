@@ -191,23 +191,37 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 10px 4px 8px;
+  gap: 3px;
+  padding: 8px 2px 6px;
   color: var(--text-3);
   transition: color 0.2s;
   position: relative;
 }
 
 .nav-btn svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.2s;
 }
 
 .nav-btn span {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.nav-icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.5);
+  transition: filter 0.2s, transform 0.2s;
+}
+.nav-btn.active .nav-icon-img {
+  filter: none;
 }
 
 .nav-btn.active {
@@ -914,6 +928,97 @@ img { max-width: 100%; display: block; }
 /* hide scrollbar but keep scroll */
 .tab-panel::-webkit-scrollbar { display: none; }
 .tab-panel { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Extra Services ──────────────────────────────────────── */
+.extras-intro-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #1E2640;
+  border-radius: var(--r-sm);
+  padding: 14px 16px;
+  margin-bottom: 4px;
+}
+
+.extras-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.extras-intro-box p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.5;
+}
+
+.extra-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.extra-card {
+  background: var(--surface);
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.extra-card-icon {
+  font-size: 22px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-lt);
+  border-radius: var(--r-xs);
+  flex-shrink: 0;
+}
+
+.extra-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.extra-card-body strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.extra-card-body p {
+  font-size: 12px;
+  color: var(--text-2);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.extra-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: 100px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.extra-book-btn:active { background: var(--primary-dk); }
+
+.extra-book-btn svg { width: 12px; height: 12px; }
 
 /* ── Desktop guard ────────────────────────────────────────── */
 @media (min-width: 600px) {
