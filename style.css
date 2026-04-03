@@ -223,7 +223,7 @@ img { max-width: 100%; display: block; }
   transition: filter 0.2s, transform 0.2s;
 }
 .nav-btn.active .nav-icon-img {
-  filter: none;
+  filter: none !important;
 }
 
 .nav-btn.active {
