@@ -966,15 +966,15 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .extra-card-img {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   height: 160px;
   object-fit: cover;
-  display: block;
+  display: block !important;
 }
 
 .extra-card-body {
