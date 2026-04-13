@@ -103,7 +103,7 @@ const TRANSLATIONS = {
 
     /* Good to know */
     gk_ci_title:       'Check-in time',
-    gk_ci_p:           'From <b>3:00 pm</b> to <b>7:00 pm</b>. Early check-in available on request.',
+    gk_ci_p:           'From <b>3:00 pm</b> onwards — self check-in',
     gk_co_title:       'Check-out',
     gk_co_p:           'By <b>10:00 am</b>. Late check-out until 6pm available for a fee.',
     gk_wifi_title:     'Free Wi-Fi',
@@ -214,8 +214,8 @@ const TRANSLATIONS = {
     info_sub:          'Everything you need for a comfortable stay',
     s_ci_co:           'Check-in & Check-out',
     info_ci_strong:    'Check-in',
-    info_ci_p:         'From <b>3:00 pm</b> to <b>7:00 pm</b>',
-    info_ci_badge:     'Early check-in on request',
+    info_ci_p:         'From <b>3:00 pm</b> onwards — self check-in',
+    info_ci_badge:     'Self check-in',
     info_co_strong:    'Check-out',
     info_co_p:         'By <b>10:00 am</b>',
     info_co_badge:     'Late checkout until 6pm available (fee applies)',
@@ -396,7 +396,7 @@ const TRANSLATIONS = {
 
     /* Good to know */
     gk_ci_title:       'Orario di Check-in',
-    gk_ci_p:           'Dalle <b>ore 15:00</b> alle <b>ore 19:00</b>. Check-in anticipato disponibile su richiesta.',
+    gk_ci_p:           'Dalle <b>ore 15:00</b> in poi — self check-in',
     gk_co_title:       'Check-out',
     gk_co_p:           'Entro le <b>ore 10:00</b>. Check-out posticipato fino alle 18:00 disponibile a pagamento.',
     gk_wifi_title:     'Wi-Fi Gratuito',
@@ -507,8 +507,8 @@ const TRANSLATIONS = {
     info_sub:          'Tutto ciò che ti serve per un soggiorno confortevole',
     s_ci_co:           'Check-in & Check-out',
     info_ci_strong:    'Check-in',
-    info_ci_p:         'Dalle <b>ore 15:00</b> alle <b>ore 19:00</b>',
-    info_ci_badge:     'Check-in anticipato su richiesta',
+    info_ci_p:         'Dalle <b>ore 15:00</b> in poi — self check-in',
+    info_ci_badge:     'Self check-in',
     info_co_strong:    'Check-out',
     info_co_p:         'Entro le <b>ore 10:00</b>',
     info_co_badge:     'Check-out posticipato fino alle 18:00 disponibile (a pagamento)',
