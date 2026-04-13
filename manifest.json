@@ -1,0 +1,26 @@
+{
+  "name": "Villa Serena Cortona",
+  "short_name": "Villa Serena",
+  "description": "Guest information guide for Villa Serena & Dependance, Cortona, Tuscany.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FDFAF6",
+  "theme_color": "#FDFAF6",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/IMMAGINI/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/IMMAGINI/VS-FAVICON.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
