@@ -977,17 +977,19 @@ img { max-width: 100%; display: block; }
 /* ── Extra Services ──────────────────────────────────────── */
 .extras-intro-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 14px;
   background: #1E2640;
   border-radius: var(--r-sm);
-  padding: 14px 16px;
+  padding: 18px 16px;
   margin-bottom: 4px;
+  text-align: center;
 }
 
 .extras-logo {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
 }
 
@@ -995,7 +997,27 @@ img { max-width: 100%; display: block; }
   font-size: 13px;
   color: rgba(255,255,255,0.82);
   line-height: 1.5;
+  margin: 0;
 }
+
+.has-dark-blue-color { color: #fff !important; }
+.has-gold-color { color: #c9a84c !important; }
+
+.extras-cta-btn {
+  display: inline-block;
+  background: #c0623a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  margin-top: 4px;
+}
+
+.extras-cta-btn:active { background: #a8522f; }
 
 .extra-cards {
   display: flex;
