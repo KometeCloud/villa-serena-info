@@ -1000,8 +1000,10 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-.has-dark-blue-color { color: #fff !important; }
-.has-gold-color { color: #c9a84c !important; }
+mark.has-dark-blue-color,
+.has-inline-color.has-dark-blue-color { color: #fff !important; background: transparent !important; }
+mark.has-gold-color,
+.has-inline-color.has-gold-color { color: #c9a84c !important; background: transparent !important; }
 
 .extras-cta-btn {
   display: inline-block;
